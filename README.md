@@ -27,7 +27,9 @@ Run with the `--watch` flag (`npm test -- --watch`) to run in interactive watch 
 
 ## 下载本工程后
 
-执行`git clone`获取仓库到本地后，进入工程目录，执行`yarn`下载依赖
+1. 重命名文件夹
+2. 进入工程目录
+3. 执行`yarn`，下载依赖
 
 ## 目录说明
 
