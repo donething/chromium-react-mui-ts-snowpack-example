@@ -69,17 +69,28 @@ Run with the `--watch` flag (`npm test -- --watch`) to run in interactive watch 
 
   ```json
   {
-  "dependencies": {
-    "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.8.1",
-    "@mui/material": "^5.6.2",
-    "react-router-dom": "^6.3.0"
-  },
-  "devDependencies": {
-    "@types/chrome": "^0.0.181",
-    "@types/react-router-dom": "^5.3.3",
+    "dependencies": {
+      "@emotion/react": "^11.9.0",
+      "@emotion/styled": "^11.8.1",
+      "@mui/material": "^5.6.2",
+      "react-router-dom": "^6.3.0"
+    },
+    "devDependencies": {
+      "@types/chrome": "^0.0.181",
+      "@types/react-router-dom": "^5.3.3",
+    }
   }
-
-}
-
   ```
+  
+* `manifest.json`
+```json
+{
+  "manifest_version": 3,
+  "minimum_chrome_version": "92",
+  "background": {
+    "service_worker": "/dist/background/service_worker.js",
+    "type": "module"
+  },
+  "options_page": "/index.html#/options"
+}
+```
