@@ -25,11 +25,10 @@ your `snowpack.config.mjs` config file.
 Launches the application test runner.
 Run with the `--watch` flag (`npm test -- --watch`) to run in interactive watch mode.
 
-## 下载本工程后
+## 使用
 
-1. 重命名文件夹
-2. 进入工程目录
-3. 执行`yarn`，下载依赖
+1. 克隆到本地：`git clone https://github.com/donething/chromium-react-mui-ts-snowpack-example my-ext`
+2. 进入工程目录，执行`yarn`，下载依赖
 
 ## 目录说明
 
@@ -41,10 +40,7 @@ Run with the `--watch` flag (`npm test -- --watch`) to run in interactive watch 
 
 ## 代码编写说明
 
-* 引入`mui`的组件，需要使用`import Button from "@mui/material/Button"`，**不能**使用`import {Button} from "@mui/material"`
-  ，会导致`yarn start`报错"Uncaught SyntaxError: The requested module '
-  /_snowpack/pkg/@mui.base.ClickAwayListener.v5.0.0-alpha.77.js' does not provide an export named 'FormLabelRoot'"
-  的问题（不过`yarn build`却正常）
+暂无
 
 ## 为适配扩展而改动的配置
 

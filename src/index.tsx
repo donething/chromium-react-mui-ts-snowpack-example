@@ -1,11 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Popup from "./pages/Popup"
-import Options from "./pages/Options"
+import {createRoot} from "react-dom/client"
 import {HashRouter, Route, Routes} from "react-router-dom"
-import './index.css'
+import React from "react"
+import Options from "./pages/Options"
+import Popup from "./pages/Popup"
 
-ReactDOM.render(
+const container = document.getElementById('root')
+const root = createRoot(container!)
+
+root.render(
   <React.StrictMode>
     <HashRouter>
       <Routes>
@@ -14,8 +16,7 @@ ReactDOM.render(
         <Route path="/popup" element={<Popup/>}/>
       </Routes>
     </HashRouter>
-  </React.StrictMode>,
-  document.getElementById('root'),
+  </React.StrictMode>
 )
 
 // Hot Module Replacement (HMR) - Remove this snippet to remove HMR.

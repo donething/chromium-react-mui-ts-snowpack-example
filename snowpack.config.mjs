@@ -32,5 +32,5 @@ export default {
   buildOptions: {
     /* ... */
     metaUrlPath: "sp_env"
-  },
-};
+  }
+}

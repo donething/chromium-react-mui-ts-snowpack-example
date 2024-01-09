@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 
 // 选项页面
-const Options = (): JSX.Element => {
+const Options = (): React.ReactElement => {
   useEffect(() => {
     document.title = "选项页面"
   }, [])
